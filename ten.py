@@ -8,4 +8,4 @@ git config --global user.name "khusbu"
 git commit -m "any message" # commting area, -m is message
 git remote add origin https://github.com/Khusbu04/khusbu_python_class.git
 git push origin master # code push to git
-
+add commit push
