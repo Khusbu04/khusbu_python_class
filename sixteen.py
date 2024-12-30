@@ -21,7 +21,7 @@ def setup_mission():
     #check batteries over hundred
 def get_charged_batteries():
     batteries = [50, 30, 4, 45, 12, 18, 30] ##battery basket
-    minimum_battery_powewr = 20 ### battery use minimum 20% charge
+    minimum_battery_power = 20 ### battery use minimum 20% charge
     usable_battery_power = 0
     usable_battery_count = 0
     for battery in batteries: ## check every battery
@@ -35,9 +35,9 @@ def decrypt_alien_message(alien_message):
     human_message = alien_message[::-1] ## reverse string
     return human_message
 def food_divide_equally(foods, crew_member):
-    equally_foods = len(food) // crews_member
-    remaining_foods = len(foods) % crews_member
-    return equally_foods, remaining_food 
+    equally_foods = len(foods) // crew_member
+    remaining_foods = len(foods) % crew_member
+    return equally_foods, remaining_foods 
 def alien_attack_game():
     print("Welcome to Alien Attack Game")
     print("Starting mission.......")
@@ -53,8 +53,9 @@ def alien_attack_game():
     print(f"Alien is saying: {decrypted_text}")
     print("Alien has captured all astronauts")
     print("if astronaut wants to escape they have divide each food and give remaining foods")
-    equally_divided, remaining_food = food_divide_equally(foods, crews_number)
-    print(f"You have {equally_divided} foods divided equally and remaining = {remaining_food}")
+    equally_foods, remaining_foods = food_divide_equally(foods, crews_number)
+    print(f"You have {equally_foods} foods divided equally and remaining = {remaining_foods}")
     print("Okay... Now you can go to Earth")
     print("Mission completed")
+
 alien_attack_game()
