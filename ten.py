@@ -10,3 +10,33 @@ git remote add origin https://github.com/Khusbu04/khusbu_python_class.git
 git push origin master # code push to git
 add commit push
 git checkout -b "branch name"
+
+assignment:-
+git init .
+git remote add origin link.....
+git add .
+git commit -m "wow"
+git push origin master
+
+pip --version
+pip install virtualenv
+virtualenv venv^c
+python -m venv venv
+pip freeze # shows list of library 
+pip install numpy
+
+Windows: source venv/Scripts/activate # room
+Ubuntu: source venv/bin/ activate
+
+#virtual environment activate and deactivate
+pip --version
+pip install virtualenv
+virtualenv ven^c
+python -m venv venv
+ls
+source venv/bin/activate #or 
+source venv/Scripts/activate
+deactivate
+
+#python library
+pip install numpy
